@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+@import "variables";
+
+// normalize
+@import "normalize/normalize";
+
+// bitters
+@import "bitters/bourbon/bourbon/bourbon";
+@import "bitters/base/grid-settings";
+@import "bitters/neat/neat";
+@import "bitters/base/base";
+
+body {
+    margin: 0;
+    font-family: $serif;
+}
+
+// body {
+//     background: #FFF url("http://griddle.it/320-2-30?horizontal=24") repeat-y center top;
+//     @include media(768px) {
+//         background: #FFF url("http://griddle.it/768-12-30?horizontal=24") repeat-y center top;
+//     }
+//     @include media(860px) {
+//         background: #FFF url("http://griddle.it/1088-12-30?horizontal=24") repeat-y center top;
+//     }
+// }
+
+.container {
+    @include outer-container;
+    margin-bottom: 30px;
+    .main {
+        @include span-columns(10);
+        @include shift(1);
+        // background-color: rgba(0, 255, 0, .5);
+        @include media(53.75em) { // 53.75em * (font-size) 16px = 860px
+          @include span-columns(9);
+          @include shift(0);
+        }
+    }
+    .side {
+        display: none;
+        // background-color: rgba(255,0,0,.5);
+        @include media(53.75em) { // 53.75em * (font-size) 16px = 860px
+          @include span-columns(3);
+          display: block;
+        }
+    }
+}
+
+
+.mainVisual {
+    position: relative;
+    min-height: 300px;
+    // background: url("https://placeimg.com/1280/300/nature") no-repeat;
+    background-size: cover;
+    padding: 0 1em;
+}
+
+.copy {
+    @include outer-container;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding-top: 8em;
+    color: #FFF;
+}
+
+.copy__main {
+    font-size: 22px;
+    letter-spacing: .075em;
+    line-height: 0;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+    @include media(53.75em) {
+        font-size: 42px;
+    }
+}
+
+.copy__sub {
+    font-size: 12px;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 1);
+    @include media(53.75em) {
+        font-size: 24px;
+    }
+}
+
+// heading
+.heading-base {
+    position: relative;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 2px solid $navy;
+    background: -moz-linear-gradient(50% 0% -90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    background: -webkit-linear-gradient(-90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    background: -webkit-gradient(linear, 50% 0%, 50% 104.54%, color-stop(0, rgba(250, 250, 250, 1)), color-stop(1, rgba(224, 224, 224, 1)));
+    background: -o-linear-gradient(-90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    background: -ms-linear-gradient(-90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    // -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E0E0E0' ,GradientType=0)";
+    background: linear-gradient(180deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E0E0E0', GradientType=0);
+    color: $navy;
+    margin-bottom: 1em;
+    padding: 16px 20px 10px;
+    h2 {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 1;
+    }
+    .heading-base__link {
+      position: absolute;
+      top: 1.5em;
+      right: 20px;
+      font-size: 12px;
+    }
+}
+
+// list
+.infolist {
+  dt {
+    color: #5E4518;
+  }
+  dd {
+    border-bottom: 1px dotted #555;
+    padding-bottom: .75em;
+  }
+}
+
+
+.bnr {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* ==========================================================================
+   navi
+   ========================================================================== */
+
+@import "navi";
+
+
+
+/* ==========================================================================
+   footer
+   ========================================================================== */
+
+@import "footer";
+
+
+/* ==========================================================================
+   button
+   ========================================================================== */
+
+@import "button";
+
+
+/* ==========================================================================
+   miscellaneous
+   ========================================================================== */
+
+@import "miscellaneous"

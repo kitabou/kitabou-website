@@ -1,0 +1,21 @@
+{
+  "name": "kitabou-website",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^1.8.2",
+    "gulp": "^3.8.10",
+    "gulp-csscomb": "^3.0.3",
+    "gulp-pleeease": "^1.1.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-size": "^1.1.0",
+    "gulp-svgmin": "^1.0.0"
+  }
+}
