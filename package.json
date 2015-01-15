@@ -10,12 +10,18 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^1.8.2",
+    "del": "^1.1.1",
     "gulp": "^3.8.10",
     "gulp-csscomb": "^3.0.3",
+    "gulp-csso": "^0.2.9",
+    "gulp-front-matter": "^1.1.1",
+    "gulp-hb": "^1.0.1",
+    "gulp-imagemin": "^2.1.0",
+    "gulp-minify-html": "^0.1.8",
     "gulp-pleeease": "^1.1.0",
     "gulp-plumber": "^0.6.6",
     "gulp-ruby-sass": "^0.7.1",
     "gulp-size": "^1.1.0",
-    "gulp-svgmin": "^1.0.0"
+    "run-sequence": "^1.0.2"
   }
 }
