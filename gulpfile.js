@@ -93,7 +93,7 @@ gulp.task('hb', function() {
 gulp.task('watch', ['browserSync'], function() {
     gulp.watch(['app/sass/*.scss'], ['style']);
     gulp.watch(['app/images/**/*.+(jpg|png|gif|svg)'], reload);
-    gulp.watch(['app/templates/pages/**/*.html'], ['hb']);
+    gulp.watch(['app/templates/pages/**/*.html', 'app/templates/partials/*.hbs'], ['hb']);
 });
 
 
