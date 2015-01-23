@@ -70,6 +70,13 @@
     vertical-align: middle;
 }
 
+.company-addr__name--header {
+  @extend .company-addr__name;
+  margin: -2.1em 0 0;
+  padding-top: 2.1em;
+  display: block;
+}
+
 .company-addr__address {
     display: table-cell;
     padding-left: 1em;
