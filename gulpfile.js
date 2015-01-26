@@ -5,6 +5,7 @@ var sass = require('gulp-ruby-sass');
 var csscomb = require('gulp-csscomb');
 var csso = require('gulp-csso');
 var imagemin = require('gulp-imagemin');
+var uglify = require('gulp-uglify');
 var minifyHTML = require('gulp-minify-html');
 var size = require('gulp-size');
 var hb = require('gulp-hb');
@@ -60,6 +61,13 @@ gulp.task('imagemin', function() {
         .pipe(gulp.dest('dist/images'));
 });
 
+// minify JS
+gulp.task('uglify', function() {
+    return gulp.src('app/js/*.js')
+      .pipe(uglify())
+      .pipe(gulp.dest('dist/js'));
+});
+
 // minify HTML
 gulp.task('minify-html', function() {
     var opts = {
@@ -96,22 +104,15 @@ gulp.task('watch', ['browserSync'], function() {
     gulp.watch(['app/templates/pages/**/*.html', 'app/templates/partials/*.hbs'], ['hb']);
 });
 
-
-gulp.task('copy', function() {
-    return gulp.src('app/js/**')
-        .pipe(gulp.dest('dist/js'));
-});
-
 gulp.task('optimize', function() {
     runSequence(
         'csso', // 1
-        'minify-html', // 2
-        'copy' // 3
+        'minify-html' // 2
     );
 });
 
 // build task
-gulp.task('build', ['optimize', 'imagemin']);
+gulp.task('build', ['optimize', 'imagemin', 'uglify']);
 
 // clean task
 gulp.task('clean', function(cb) {
