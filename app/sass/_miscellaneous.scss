@@ -19,3 +19,12 @@
 .hidden {
   display: none;
 }
+
+.red {
+  color: $red;
+}
+
+.note {
+  font-size: 0.875em; // 14px
+  font-weight: normal;
+}
