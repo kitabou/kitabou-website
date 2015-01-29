@@ -9,13 +9,11 @@
     background: #006CC4;
     box-shadow: 0 7px 0 rgba(25, 25, 102, 1);
     &:hover {
-        position: relative;
         top: 2px;
         box-shadow: 0 5px 0 rgba(25, 25, 102, 1);
         transition: all 250ms ease;
     }
     &:active {
-        position: relative;
         top: 5px;
         box-shadow: none;
         transition: all 250ms ease;
