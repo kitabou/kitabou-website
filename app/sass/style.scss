@@ -38,6 +38,10 @@ body {
           @include shift(0);
         }
     }
+    .main--sub {
+        @include span-columns(10);
+        @include shift(1);
+    }
     .side {
         display: none;
         // background-color: rgba(255,0,0,.5);
@@ -57,6 +61,12 @@ body {
     padding: 0 1em;
 }
 
+.mainVisual--sub {
+    @extend .mainVisual;
+    min-height: 100px;
+    background: linear-gradient(180deg,#fafafa 0%,#e0e0e0 100%);
+}
+
 .copy {
     @include outer-container;
     position: absolute;
@@ -64,6 +74,18 @@ body {
     bottom: 0;
     padding-top: 8em;
     color: #FFF;
+}
+
+.page-title {
+    @extend .copy;
+    font-size: 20px;
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin-top: -.5em;
+    padding-top: 0;
+    text-align: center;
+    color: $navy;
 }
 
 .copy__main {
@@ -84,35 +106,6 @@ body {
     }
 }
 
-// heading
-.heading-base {
-    position: relative;
-    border-top: 1px solid #EDEDED;
-    border-bottom: 2px solid $navy;
-    background: -moz-linear-gradient(50% 0% -90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
-    background: -webkit-linear-gradient(-90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
-    background: -webkit-gradient(linear, 50% 0%, 50% 104.54%, color-stop(0, rgba(250, 250, 250, 1)), color-stop(1, rgba(224, 224, 224, 1)));
-    background: -o-linear-gradient(-90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
-    background: -ms-linear-gradient(-90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
-    // -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E0E0E0' ,GradientType=0)";
-    background: linear-gradient(180deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
-    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E0E0E0', GradientType=0);
-    color: $navy;
-    margin-bottom: 1em;
-    padding: 16px 20px 10px;
-    h2 {
-      font-size: 24px;
-      font-weight: normal;
-      line-height: 1;
-    }
-    .heading-base__link {
-      position: absolute;
-      top: 1.5em;
-      right: 20px;
-      font-size: 12px;
-    }
-}
-
 // list
 .infolist {
   dt {
@@ -121,6 +114,12 @@ body {
   dd {
     border-bottom: 1px dotted #555;
     padding-bottom: .75em;
+  }
+}
+.businesslist {
+  @extend .infolist;
+  dt {
+    color: $navy;
   }
 }
 
@@ -157,3 +156,18 @@ body {
    ========================================================================== */
 
 @import "miscellaneous";
+
+
+/* ==========================================================================
+   modules
+   ========================================================================== */
+
+@import "modules/table";
+@import "modules/box";
+@import "modules/heading";
+
+.AD {
+    font-weight: 700;
+    font-style: italic;
+    color: #79b3e0;
+}
