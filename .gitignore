@@ -38,9 +38,5 @@ node_modules
 ### Bower ###
 bower_components
 
-app/business
-app/check-service
-app/company
-app/contact
 dist
 app/_index.html
