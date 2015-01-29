@@ -1,0 +1,83 @@
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-l">
+                <div class="footer-menu">
+                    <ul>
+                        <li>会社案内
+                            <ul>
+                                <li><a href="{{file.frontMatter.assetsPath}}/company/">会社概要</a>
+                                </li>
+                                <li><a href="{{file.frontMatter.assetsPath}}/company/greeting/">社長挨拶</a>
+                                </li>
+                                <li><a href="{{file.frontMatter.assetsPath}}/company/history/">会社沿革</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li>業務案内
+                            <ul>
+                                <li><a href="{{file.frontMatter.assetsPath}}/business/">業務概要</a>
+                                </li>
+                                <li><a href="{{file.frontMatter.assetsPath}}/business/tech/">技術情報</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-menu">
+                    <ul>
+                        <li>点検サービス
+                          <ul>
+                            <li><a href="{{file.frontMatter.assetsPath}}/check-service/">点検サービス</a></li>
+                            <li><a href="{{file.frontMatter.assetsPath}}/check-service/indemnity/">消防用設備の保守・工事等に関わる賠償責任</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="{{file.frontMatter.assetsPath}}/contact/">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-catchcopy">
+                    <h3 class="footer-l__heading-title">防災業52年の信頼と実績</h3>
+                    <p>安全・安心な暮らしは日頃の保守・点検から。
+                        <br> 消防用設備の設計・施工・保守・点検のことなら
+                        <br> 小さなことでもご相談ください。
+                        <br> 当社では官公庁の点検も請い、お客様から絶大な信頼を得ています。
+                    </p>
+                    <div class="btn-blue btn-radius">
+                        <a href="{{file.frontMatter.assetsPath}}/contact/">お問い合わせ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-r">
+                <div id="map" class="googlemap"></div>
+                <p>防災機器・防災についてのことなら安心と歴史の北原防災</p>
+                <div class="company-addr">
+                    <div class="company-addr__name"><span class="company-addr__kk">株式会社</span>北原防災</div>
+                    <address class="company-addr__address">260-0801
+                        <br> 千葉県千葉市中央区仁戸名町702番地
+                        <br> 043-264-5511
+                    </address>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">KITAHARA-BOUSAI.CO.,Ltd. All Rights Reserved.</div>
+    </footer>
+
+    <script src="//maps.google.com/maps/api/js?sensor=false&amp;language=ja"></script>
+    <script src="{{file.frontMatter.assetsPath}}/js/gmaps.js"></script>
+    <script async src="{{file.frontMatter.assetsPath}}/js/jquery.bgswitcher.js"></script>
+    <script async src="{{file.frontMatter.assetsPath}}/js/main.js"></script>
+    <!-- GA -->
+    <script async src="http://www.google.com/js/gweb/analytics/autotrack.js"></script>
+    <script>
+    new gweb.analytics.AutoTrack({
+        profile: "UA-xxxxxxxx-x"
+    });
+    </script>
+
+</body>
+
+</html>
