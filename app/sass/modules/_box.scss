@@ -1,0 +1,17 @@
+$radius: 4px;
+
+.box {
+    padding: 1em;
+    background: $second-color;
+    h3 {
+      font-size: 1.125em;
+    }
+}
+
+.box--radius {
+    border-radius: $radius;
+}
+
+.contact .box {
+    margin: 1.875em 0;
+}

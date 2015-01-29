@@ -1,0 +1,35 @@
+// .indemnity .table {
+.table {
+    margin-top: 2em;
+    tr:first-child {
+      border-top: 2px solid $base-color;
+    }
+    tr:last-child {
+      border-bottom: 2px solid $base-color;
+    }
+    th, td {
+        padding: 0.625em;
+    }
+    th {
+        text-align: center;
+        background: lighten($second-color, 7);
+        font-weight: normal;
+        color: $navy;
+    }
+    .td-label {
+        background: $second-color;
+        text-align: center;
+        border-bottom: 1px dotted #999;
+    }
+    ol {
+        list-style-type: decimal;
+        margin-left: 1.8em;
+        li {
+            margin-bottom: 0.625em;
+        }
+    }
+    ul {
+        list-style-type: circle;
+        margin-left: 1.4em;
+    }
+}
