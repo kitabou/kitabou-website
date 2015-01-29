@@ -26,7 +26,7 @@ gulp.task('browserSync', function() {
 
 // style task
 gulp.task('style', function() {
-    return gulp.src('app/sass/*.scss')
+    return gulp.src('app/sass/{,*/}*.scss')
         .pipe(plumber())
         .pipe(sass({
             "sourcemap=none": true
@@ -99,7 +99,7 @@ gulp.task('hb', function() {
 
 // watch task
 gulp.task('watch', ['browserSync'], function() {
-    gulp.watch(['app/sass/*.scss'], ['style']);
+    gulp.watch(['app/sass/{,*/}*.scss'], ['style']);
     gulp.watch(['app/images/**/*.+(jpg|png|gif|svg)'], reload);
     gulp.watch(['app/templates/pages/**/*.html', 'app/templates/partials/*.hbs'], ['hb']);
 });
