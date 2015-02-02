@@ -28,3 +28,18 @@
   font-size: 0.875em; // 14px
   font-weight: normal;
 }
+
+.sm-hidden {
+  display: none;
+  @include media ($large-screen) {
+    display: block;
+  }
+}
+
+.lg-hidden {
+  display: block;
+  @include media ($large-screen) {
+    display: none;
+  }
+}
+
