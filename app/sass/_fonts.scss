@@ -9,3 +9,9 @@
   src:url('../fonts/CONDENSEicon.otf') format('opentype');
   src:url('../fonts/CONDENSEicon.woff') fromat('woff');
 }
+
+.icon-CONDENSEicon {
+    font-family: CONDENSEicon;
+    font-style: normal;
+    color: $navy;
+}
