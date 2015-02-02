@@ -1,10 +1,45 @@
 $radius: 4px;
 
 .box {
+    margin: 1.875em 0;
     padding: 1em;
     background: $second-color;
     h3 {
       font-size: 1.125em;
+    }
+    .sp-tel {
+        display: block;
+        background: darken($second-color, 10);
+        border-radius: 999em;
+        padding: 1em 0;
+        margin: 0 auto;
+        width: 100%;
+        &:hover {
+            background: darken($second-color, 20);
+        }
+    }
+    .tel-number {
+        font-size: 24px;
+        color: $navy;
+        text-align: center;
+        line-height: 1;
+    }
+    .tel-number--pc {
+      text-align: left;
+    }
+    .box__link {
+      margin: 1em 0 0;
+      line-height: 1;
+      a:before {
+        content: "";
+        border-style:solid;
+        border-width: 3px 0 3px 6px;
+        border-color: transparent transparent transparent $base-color;
+        width: 10px;
+        height: 0;
+        display: inline-block;
+        margin-bottom: 3px;
+      }
     }
 }
 
@@ -12,6 +47,6 @@ $radius: 4px;
     border-radius: $radius;
 }
 
-.contact .box {
-    margin: 1.875em 0;
+.box-yellow {
+    background: lighten($accent-color, 10);
 }
