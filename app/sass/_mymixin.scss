@@ -1,0 +1,29 @@
+@mixin arrow-down {
+    content: "";
+    display: inline-block;
+    border-width: 6px 3px 0 3px;
+    border-color: $base-color transparent transparent transparent;
+    border-style: solid;
+    width: 0;
+    height: 0;
+}
+
+@mixin arrow-up {
+    content: "";
+    display: inline-block;
+    border-width: 0 3px 6px 3px;
+    border-color: transparent transparent $base-color transparent;
+    border-style: solid;
+    width: 0;
+    height: 0;
+}
+
+@mixin arrow-right {
+    content: "";
+    display: inline-block;
+    border-width: 3px 0 3px 6px;
+    border-color: transparent transparent transparent $base-color;
+    border-style: solid;
+    width: 0;
+    height: 0;
+}
