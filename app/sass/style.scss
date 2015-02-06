@@ -14,6 +14,8 @@
 // fonts
 @import "fonts";
 
+@import "mymixin";
+
 body {
     margin: 0;
     font-family: $serif;
@@ -80,13 +82,9 @@ body {
 }
 
 .page-title {
-    @extend .copy;
     font-size: 20px;
-    top: 50%;
-    right: 0;
-    left: 0;
-    margin-top: -.5em;
-    padding-top: 0;
+    line-height: 1;
+    padding-top: 2em;
     text-align: center;
     color: $navy;
 }
@@ -173,4 +171,146 @@ body {
     font-weight: 700;
     font-style: italic;
     color: #79b3e0;
+}
+
+.fortop {
+    text-align: right;
+    margin: 2.5em 0;
+    border-bottom: 1px dotted #555;
+    padding-bottom: 2.5em;
+    a {
+        background: $second-color;
+        border-radius: 999em;
+        padding: .5em 1em;
+        transition: background ease-in .1s;
+        &:before {
+            @include arrow-up;
+            margin: .2em;
+        }
+        &:hover {
+          background: lighten($second-color, 5);
+        }
+    }
+}
+
+.pagelink {
+    @include media ($large-screen) {
+        @include outer-container;
+    }
+    li {
+      margin-bottom: 2em;
+      // display: inline-block;
+      @include media ($large-screen) {
+        @include span-columns(5 of 10);
+        @include omega(2n);
+      }
+      a {
+        display: block;
+        text-decoration: underline;
+        background: $second-color;
+        padding: 2em;
+        text-align: center;
+        &:hover {
+          text-decoration: none;
+        }
+        &:before {
+          @include arrow-down;
+          margin: .2em;
+        }
+      }
+    }
+}
+
+.check-service {
+  ol {
+  list-style-type: decimal;
+  padding-left: 2.8em;
+    li {
+      margin-bottom: 1em;
+    }
+  }
+  .flow {
+    background: lighten($second-color, 10);
+    border: 4px solid $base-color;
+    margin-bottom: 2em;
+    padding: 1em;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      border-width: 10px 20px 0 20px;
+      border-color: $base-color transparent transparent transparent;
+      border-style: solid;
+      width: 40px;
+      height: 0;
+      position: absolute;
+      bottom: -1.6em;
+      left: 50%;
+    }
+    &:last-child:after {
+      display: none;
+    }
+    dl {
+      margin-bottom: 0;
+      dt {
+        // background-color: $accent-color;
+        font-size: 1em;
+      }
+      dd:nth-of-type(1) {
+        margin-bottom: 1em;
+      }
+    }
+    dt {
+      font-weight: normal;
+      color: $navy;
+      margin-top: 0;
+      font-size: 18px;
+    }
+  }
+}
+
+.item {
+    @include media ($large-screen) {
+      @include outer-container;
+      // @include clearfix;
+    }
+}
+
+.item__img {
+    @include media ($large-screen) {
+        @include span-columns(5 of 10);
+        // background-color: rgba(0, 255, 0, .5);
+    }
+    figure {
+      margin: 2em 0;
+      text-align: center;
+    }
+}
+
+.item__desc {
+    @include media ($large-screen) {
+        @include span-columns(5 of 10);
+        // background-color: rgba(255, 0, 0, .5);
+    }
+}
+
+.item__link {
+  margin: .75em 0;
+}
+
+.items ul.list {
+  list-style-type: disc;
+  li {
+    margin-left: 2em;
+    margin-bottom: 1em;
+  }
+}
+
+.topic {
+  background: $red;
+  color: #fff;
+  padding: 1em;
+  border-radius: 999em;
+  text-align: center;
+  margin: 1em 0;
 }
