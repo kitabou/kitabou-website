@@ -42,7 +42,11 @@
         display: block;
         margin-bottom: 30px;
         ul li ul {
-            margin-left: 1em;
+            margin-left: .2em;
+        }
+        ul li ul li a:before {
+          @include arrow-right;
+          margin: .2em;
         }
     }
 }
