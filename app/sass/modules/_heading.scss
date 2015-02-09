@@ -43,46 +43,47 @@
   margin-bottom: .5em;
 }
 
-.items .item-name {
-  padding: .5em;
-  background: $second-color;
+.items {
+    .item-name {
+        padding: .5em;
+        background: $second-color;
+    }
+    .heading-cat {
+        padding: 1em;
+        margin-bottom: 1em;
+        h3 {
+            font-size: 1.125em;
+            font-weight: normal;
+        }
+    }
+    .heading-cat--water {
+        border-left: 4px solid #2196F3;
+        color: #fff;
+        background: #1565C0;
+    }
+    .heading-cat--foods {
+        border-left: 4px solid #FF9800;
+        color: #fff;
+        background: #EF6C00;
+    }
+    .heading-cat--solar {
+        border-left: 4px solid #F44336;
+        color: #fff;
+        background: #C62828;
+    }
+    .heading-cat--megaphone {
+        border-left: 4px solid #009688;
+        color: #fff;
+        background: #00695C;
+    }
+    .heading-cat--car {
+        border-left: 4px solid #3F51B5;
+        color: #fff;
+        background: #283593;
+    }
+    .heading-cat--other {
+        border-left: 4px solid #E91E63;
+        color: #fff;
+        background: #AD1457;
+    }
 }
-
-.items .heading-cat {
-  padding: 1em;
-  margin-bottom: 1em;
-  h3 {
-    font-size: 1.125em;
-    font-weight: normal;
-  }
-}
-.items .heading-cat--water {
-    border-left: 4px solid #2196F3;
-    color: #fff;
-    background: #1565C0;
-  }
-.items .heading-cat--foods {
-    border-left: 4px solid #FF9800;
-    color: #fff;
-    background: #EF6C00;
-  }
-.items .heading-cat--solar {
-    border-left: 4px solid #F44336;
-    color: #fff;
-    background: #C62828;
-  }
-.items .heading-cat--megaphone {
-    border-left: 4px solid #009688;
-    color: #fff;
-    background: #00695C;
-  }
-.items .heading-cat--car {
-    border-left: 4px solid #3F51B5;
-    color: #fff;
-    background: #283593;
-  }
-.items .heading-cat--other {
-    border-left: 4px solid #E91E63;
-    color: #fff;
-    background: #AD1457;
-  }
