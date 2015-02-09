@@ -44,6 +44,10 @@
         ul li ul {
             margin-left: .2em;
         }
+        ul li a:before {
+          @include arrow-right;
+          margin: .2em;
+        }
         ul li ul li a:before {
           @include arrow-right;
           margin: .2em;
