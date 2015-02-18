@@ -38,3 +38,21 @@ $(function() {
     });
 });
 
+// items bannner
+var loop = setInterval(function() {
+    //li先頭要素のクローンを作成
+    var clone = $(".items-banner li:first").clone(true);
+    //li先頭要素のマージントップにマイナスを指定しアニメーションさせる
+    $(".items-banner li:first").animate({
+        marginTop: "-95px"
+    }, {
+        duration: 500,
+        complete: function() {
+            //処理完了時に先頭要素を削除
+            $(".items-banner li:first").remove();
+            //クローンをliの最後に追加
+            clone.clone(true).insertAfter($(".items-banner li:last"));
+        }
+    });
+}, 3000);
+
