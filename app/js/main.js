@@ -56,3 +56,8 @@ var loop = setInterval(function() {
     });
 }, 3000);
 
+// page-menu__sp-menu
+$(".page-menu__sp-menu").click(function (e) {
+    console.log(e.type);
+    $(this).next().slideToggle();
+}).next().hide();
