@@ -43,6 +43,15 @@
   margin-bottom: .5em;
 }
 
+.hd5 {
+    color: $navy;
+    font-size: 1.125em;
+    font-weight: normal;
+    margin-bottom: .5em;
+    padding-left: .5em;
+    border-left: 6px solid $navy;
+}
+
 .items {
     .item-name {
         padding: .5em;

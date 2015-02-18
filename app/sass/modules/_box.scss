@@ -47,6 +47,70 @@ $radius: 4px;
     border-radius: $radius;
 }
 
+.box--bg-none {
+    background: none;
+    padding: 0;
+}
+
 .box-yellow {
     background: lighten($accent-color, 10);
+}
+
+
+.box-media {
+    @include clearfix;
+}
+.box-media__text {
+    @include span-columns(12);
+    @include media($large-screen) {
+        @include span-columns(9);
+    }
+}
+.box-media__img {
+    display: none;
+    @include media($large-screen) {
+        @include span-columns(3);
+        text-align: center;
+        margin-top: 0;
+        margin-left: 0;
+        font-size: .75em;
+    }
+}
+
+.box-feature3 {
+    @include clearfix;
+    margin: 3em 0;
+    dt {
+        text-align: center;
+        font-size: 18px;
+        font-weight: normal;
+        color: $navy;
+    }
+}
+.box-feature3__title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    color: $navy;
+}
+.box-feature3__col-3 {
+    margin-bottom: 2em;
+    @include media ($large-screen) {
+        @include span-columns(4);
+        margin-bottom: .75em;
+    }
+    &:nth-of-type(3) {
+        @include media ($large-screen) {
+            @include omega();
+        }
+    }
+}
+.box-feature3-icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0 auto 10px;
+    font-size: 52px;
+    color: #fff;
+    background: $base-color;
 }
