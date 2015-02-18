@@ -31,3 +31,10 @@ map.addMarker({
     title: "株式会社北原防災"
 });
 
+// scrollUp
+$(function() {
+    $.scrollUp({
+        scrollText: '<i class="fa fa-chevron-up"></i>'
+    });
+});
+
