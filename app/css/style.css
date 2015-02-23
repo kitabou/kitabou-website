@@ -1958,7 +1958,7 @@ body
 
 .box-yellow
 {
-    background: #dec86c;
+    background: #f7e87d;
 }
 
 .box-media:after
@@ -2499,6 +2499,23 @@ body
     margin: 2em 0;
 
     text-align: center;
+}
+.item__img .note
+{
+    background: #fdf86a;
+}
+.item__img .note h5
+{
+    font-size: 16px;
+    font-weight: normal;
+
+    color: #6e6207;
+}
+.item__img .note p
+{
+    margin-bottom: 0; 
+
+    color: #9e8c0a;
 }
 
 @media screen and (min-width: 53.75em)
