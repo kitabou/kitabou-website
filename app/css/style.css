@@ -2594,6 +2594,15 @@ body
     background: crimson;
 }
 
+.catalog li
+{
+    margin-bottom: .75em;
+}
+.catalog li:last-child
+{
+    margin-bottom: 0;
+}
+
 .feature-label
 {
     margin-bottom: 1em; 

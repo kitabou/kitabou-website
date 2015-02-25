@@ -413,6 +413,15 @@ body {
   margin: 1em 0;
 }
 
+.catalog {
+  li {
+    margin-bottom: 0.75em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .feature-label {
     padding-left: .625em;
     margin-bottom: 1em;
