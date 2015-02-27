@@ -470,6 +470,7 @@ body {
     color: $mintgreen;
 }
 
+// items-banner
 .items-banner {
     height: 317px;
     overflow: hidden;
@@ -481,6 +482,17 @@ body {
     }
 }
 
+// entry post
+.post {
+  margin-bottom: 2.5em;
+}
+
+.post__metadate {
+    text-align: right;
+    margin: 0 0 2.5em;
+}
+
+// scrollUp
 #scrollUp {
     bottom: 20px;
     right: 20px;

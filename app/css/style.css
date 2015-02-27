@@ -2917,6 +2917,18 @@ body
     margin-bottom: 1em;
 }
 
+.post
+{
+    margin-bottom: 2.5em;
+}
+
+.post__metadate
+{
+    margin: 0 0 2.5em; 
+
+    text-align: right;
+}
+
 #scrollUp
 {
     line-height: 1;
