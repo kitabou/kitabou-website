@@ -1050,6 +1050,24 @@ body
     border-bottom: 1px dotted #555;
 }
 
+@media screen and (min-width: 53.75em)
+{
+    .infolist dt
+    {
+        float: left;
+
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 53.75em)
+{
+    .infolist dd
+    {
+        margin-bottom: .75em;
+        padding-left: 8em;
+    }
+}
+
 .businesslist dt
 {
     color: #05056b;
