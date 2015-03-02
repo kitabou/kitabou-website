@@ -961,7 +961,8 @@ body
     position: relative;
 
     min-height: 300px;
-    padding: 0 1em; 
+    margin-bottom: 2em; 
+    padding: 0 1em;
 
     background-size: cover;
 }
