@@ -2113,10 +2113,29 @@ body
 .table--gray .definition dt
 {
     font-weight: normal;
-
-    float: left;
-
+}
+.table .definition dt:first-child,
+.table--gray .definition dt:first-child
+{
     margin-top: 0;
+}
+@media screen and (min-width: 53.75em)
+{
+    .table .definition dt,
+    .table--gray .definition dt
+    {
+        float: left;
+
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 53.75em)
+{
+    .table .definition dd,
+    .table--gray .definition dd
+    {
+        margin-left: 10em;
+    }
 }
 
 .th--w20
