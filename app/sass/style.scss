@@ -493,6 +493,51 @@ body {
     margin: 0 0 2.5em;
 }
 
+.post_link {
+    @include clearfix;
+    margin-bottom: 2.5625em;
+}
+
+.post_link__previous {
+    float: left;
+    a {
+      padding: .5em 1em;
+      border: 1px solid $base-color;
+      border-radius: 999em;
+      transition: background .4s;
+      &:hover {
+        background: lighten($base-color, 20);
+        color: #fff;
+      }
+    }
+}
+
+.post_link__next {
+    float: right;
+    a {
+      padding: .5em 1em;
+      border: 1px solid $base-color;
+      border-radius: 999em;
+      transition: background .4s;
+      &:hover {
+        background: lighten($base-color, 20);
+        color: #fff;
+      }
+    }
+}
+
+.posts_link {
+    @extend .post_link;
+}
+
+.posts_link__previous {
+    @extend .post_link__previous;
+}
+
+.posts_link__next {
+    @extend .post_link__next;
+}
+
 // scrollUp
 #scrollUp {
     bottom: 20px;
