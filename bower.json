@@ -12,5 +12,13 @@
   "dependencies": {
     "gmaps": "~0.4.16",
     "scrollup": "~2.4.0"
+  },
+  "preen": {
+    "gmaps": [
+      "gmaps.js"
+    ],
+    "scrollup": [
+      "dist/*.js"
+    ]
   }
 }
