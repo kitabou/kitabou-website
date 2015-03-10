@@ -27,20 +27,20 @@
     display: inline;
     float: left;
     max-height: $centered-navigation-height;
-    padding-left: $centered-navigation-padding;
+    padding-left: $centered-navigation-padding / 2;
 
     img {
       max-height: $centered-navigation-height;
       // opacity: .6;
-      padding: .8em 0;
+      padding: 1em 0;
+      width: 41px;
+      margin-right: .27777em;
     }
 
     .mobile-logo__txt {
       position: relative;
-      top: -40px;
-      bottom: 0;
-      left: 20px;
-      font-size: 20px;
+      top: -2.2em;
+      font-size: 22px;
       color: $navy;
     }
 
@@ -56,7 +56,7 @@
     font-weight: 700;
     line-height: $centered-navigation-height;
     margin: 0;
-    padding-right: $centered-navigation-submenu-padding;
+    padding-right: $centered-navigation-submenu-padding / 2;
     // text-transform: uppercase;
 
     @include media ($horizontal-bar-mode) {
@@ -111,7 +111,6 @@
     display: block;
     line-height: $centered-navigation-height;
     overflow: hidden;
-    padding-right: $centered-navigation-submenu-padding;
     text-align: right;
     width: 100%;
     z-index: 9999;
@@ -119,7 +118,7 @@
     @include media($horizontal-bar-mode) {
       background: transparent;
       display: inline;
-      line-height: $centered-navigation-height;
+      // line-height: $centered-navigation-height;
       padding-right: 0;
 
       a {
@@ -129,7 +128,7 @@
         display: block;
         text-align: center;
         .link {
-          width: 152px;
+          width: 162px;
           height: 90px;
           display: block;
           margin: 0 auto;
@@ -150,7 +149,6 @@
           top: 1em;
           left: 0;
           right: 0;
-          width: 190px;
           height: 32px;
           background: url("../images/building.svg") no-repeat 50% 0;
         }
@@ -172,9 +170,22 @@
     a {
       color: $centered-navigation-color;
       display: inline-block;
+      padding-right: $centered-navigation-submenu-padding;
+      width: 100%;
+      @include media ($large-screen) {
+        padding-right: 0;
+        width: auto;
+      }
+      @include media (67.25em) { // min-width: 1076px
+        margin: 0 1.3em;
+      }
 
       &:hover {
         color: $centered-navigation-color-hover;
+        background: $navi-hover-color;
+        @include media ($large-screen) {
+          background: none;
+        }
       }
     }
   }
@@ -197,7 +208,7 @@
   // Sub menus
 
   li.more.nav-link {
-    padding-right: 0;
+    // padding-right: 0;
 
     // @include media($large-screen) {
     //   padding-right: $centered-navigation-submenu-padding;
@@ -207,24 +218,24 @@
     //   padding-top: 1em;
     // }
 
-    a {
+    // a {
       // margin-right: $centered-navigation-submenu-padding;
-      margin-right: 0;
-    }
+      // margin-right: 0;
+    // }
 
-    > a {
+    // > a {
       // padding-right: 0.6em;
-      @include media($large-screen) {
-        padding-right: 0;
-      }
-    }
+      // @include media($large-screen) {
+        // padding-right: 0;
+      // }
+    // }
 
     > a:after {
       @include position(absolute, auto auto auto auto);
       color: $centered-navigation-color;
       content: '\25BE';
       @include media($large-screen) {
-        @include position(absolute, auto 4.5em -1.3em auto);
+        @include position(absolute, auto 3.8em -1.3em auto);
       }
     }
   }
@@ -233,22 +244,22 @@
     overflow: visible;
     padding-right: 0;
 
-    a {
+    // a {
       // padding-right: $centered-navigation-submenu-padding;
-      padding-right: 1.6em;
+      // padding-right: 1.6em;
 
-      @include media($large-screen) {
-        padding-right: $centered-navigation-submenu-padding;
-      }
-    }
+      // @include media($large-screen) {
+      //   padding-right: $centered-navigation-submenu-padding;
+      // }
+    // }
 
     > a {
-      padding-right: 1.6em;
-      position: relative;
+      // padding-right: 1.6em;
+      // position: relative;
 
-      @include media($large-screen) {
-        margin-right: $centered-navigation-submenu-padding;
-      }
+      // @include media($large-screen) {
+      //   margin-right: $centered-navigation-submenu-padding;
+      // }
 
       &:after {
         content: '›';
@@ -321,6 +332,7 @@
           padding-left: $centered-navigation-submenu-padding;
           text-align: left;
           width: $centered-navigation-submenu-width;
+          margin: 0;
         }
       }
     }
