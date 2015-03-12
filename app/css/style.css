@@ -2862,11 +2862,27 @@ body
     background: crimson;
 }
 
-.catalog li
+.catalog ul
 {
-    margin-bottom: .75em;
+    letter-spacing: -.4em;
 }
-.catalog li:last-child
+.catalog ul li
+{
+    display: inline-block;
+
+    margin-right: .75em;
+    margin-bottom: .75em;
+
+    letter-spacing: normal;
+}
+@media screen and (min-width: 55.1875em)
+{
+    .catalog ul li
+    {
+        margin-bottom: 0;
+    }
+}
+.catalog ul li:last-child
 {
     margin-bottom: 0;
 }
