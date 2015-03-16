@@ -60,11 +60,18 @@ body {
 
 .mainVisual {
     position: relative;
-    min-height: 300px;
+    min-height: 192px;
     // background: url("https://placeimg.com/1280/300/nature") no-repeat;
-    background-size: cover;
     padding: 0 1em;
     margin-bottom: 2em;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    @include media($large-screen) {
+      background-position: center 50%;
+      min-height: 300px;
+      background-size: cover;
+    }
 }
 
 .mainVisual--sub {
@@ -78,8 +85,11 @@ body {
     position: absolute;
     top: 0;
     bottom: 0;
-    padding-top: 8em;
+    padding-top: 6em;
     color: #FFF;
+    @include media($large-screen) {
+      padding-top: 8em;
+    }
 }
 
 .page-title {
