@@ -873,9 +873,11 @@ input[type='submit']
 
 body
 {
-    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif; 
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
 
     margin: 0;
+
+    -webkit-text-size-adjust: 100%;
 }
 
 .container
