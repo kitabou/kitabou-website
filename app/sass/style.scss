@@ -341,7 +341,9 @@ body {
       height: 0;
       position: absolute;
       bottom: -1.6em;
-      left: 50%;
+      left: 0;
+      right: 0;
+      margin: auto;
     }
     &:last-child:after {
       display: none;

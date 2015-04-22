@@ -2713,13 +2713,15 @@ body
 .check-service .flow:after
 {
     position: absolute;
+    right: 0;
     bottom: -1.6em;
-    left: 50%; 
+    left: 0;
 
     display: block;
 
     width: 40px;
     height: 0;
+    margin: auto; 
 
     content: '';
 
