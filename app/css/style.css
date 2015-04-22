@@ -991,6 +991,8 @@ body
 
 .copy
 {
+    font-weight: bold; 
+
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1036,7 +1038,7 @@ body
 
     letter-spacing: .075em;
 
-    text-shadow: 0 0 6px black;
+    text-shadow: 0 0 3px black;
 }
 @media screen and (min-width: 53.75em)
 {
@@ -1050,7 +1052,7 @@ body
 {
     font-size: 12px;
 
-    text-shadow: 0 0 1px black;
+    text-shadow: 0 0 3px black;
 }
 @media screen and (min-width: 53.75em)
 {
