@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+    // jQuery.BgSwitcher
+    $(".mainVisual").bgswitcher({
+      images: ["../images/pic1.jpg", "../images/pic2.jpg", "../images/pic3.jpg"]
+    });
+
+    // navigation-menu
     $('#js-centered-navigation-menu').removeClass("show");
 
     $('#js-centered-navigation-mobile-menu').on('click', function(e) {
@@ -10,12 +17,6 @@ $(document).ready(function() {
         });
     });
 });
-
-// jQuery.BgSwitcher
-$(".mainVisual").bgswitcher({
-  images: ["../images/pic1.jpg", "../images/pic2.jpg", "../images/pic3.jpg"]
-});
-
 
 // gmaps
 var map = new GMaps({
