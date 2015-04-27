@@ -613,6 +613,10 @@ body {
     li {
       counter-increment: number;
       position: relative;
+      color: $navy;
+      margin-bottom: 2em;
+      padding-left: 3em;
+      font-size: 20px;
       &:before {
         content: counter(number);
         position: absolute;
@@ -627,14 +631,7 @@ body {
         text-align: center;
         line-height: 42px;
         background: $second-color;
-        color: $navy;
       }
-    }
-  }
-  dl {
-    margin-left: 3em;
-    dt {
-      color: $navy;
     }
   }
 }

@@ -3105,9 +3105,16 @@ body
 
 .precept ul li
 {
-    position: relative; 
+    font-size: 20px; 
+
+    position: relative;
+
+    margin-bottom: 2em;
+    padding-left: 3em;
 
     counter-increment: number;
+
+    color: #05056b;
 }
 .precept ul li:before
 {
@@ -3126,15 +3133,6 @@ body
     content: counter(number);
     text-align: center;
 
-    color: #05056b; 
     border-radius: 50%;
     background: #cce2f3;
-}
-.precept dl
-{
-    margin-left: 3em;
-}
-.precept dl dt
-{
-    color: #05056b;
 }
