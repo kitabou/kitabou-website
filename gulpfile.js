@@ -10,6 +10,7 @@ var minifyHTML = require('gulp-minify-html');
 var size = require('gulp-size');
 var hb = require('gulp-hb');
 var frontMatter = require('gulp-front-matter');
+var uncss = require('gulp-uncss');
 var del = require('del');
 var runSequence = require('run-sequence');
 var browserSync = require('browser-sync');
@@ -50,6 +51,10 @@ gulp.task('style', function() {
 gulp.task('csso', function() {
     console.log("CSS Optimized!");
     return gulp.src('app/css/style.css')
+        .pipe(uncss({
+          html:['app/**/*.html', '!app/templates/**/*.html'],
+          ignore: ['#scrollUp']
+          }))
         .pipe(csso())
         .pipe(gulp.dest('dist/css'));
 });
