@@ -1,0 +1,21 @@
+@charset "utf-8";
+// 同じ変数名で !default フラグが付いている場合、先に読み込まれている方を優先する。
+$serif: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
+$base-font-family: $serif;
+
+// COLORS
+$base-color: #006CC4;
+$second-color: #CCE2F3;
+$accent-color: #F4E04D;
+$accent-color-2: #FDF86A;
+
+$navy: #05056B;
+$red: crimson;
+$pink: #EA5F68;
+$mintgreen: #59BEB8;
+$yellow: #FEFF5E;
+
+// LINK COLORS
+$link: #006CC4;
+$link-hover: #66A7DC;
+$link-visited: #D18602;

@@ -1,0 +1,24 @@
+{
+  "name": "kitabou",
+  "version": "0.1.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gmaps": "~0.4.16",
+    "scrollup": "~2.4.0"
+  },
+  "preen": {
+    "gmaps": [
+      "gmaps.js"
+    ],
+    "scrollup": [
+      "dist/*.js"
+    ]
+  }
+}

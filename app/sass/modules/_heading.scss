@@ -1,0 +1,98 @@
+// heading
+.heading-base {
+    position: relative;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 2px solid $navy;
+    background: -moz-linear-gradient(50% 0% -90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    background: -webkit-linear-gradient(-90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    background: -webkit-gradient(linear, 50% 0%, 50% 104.54%, color-stop(0, rgba(250, 250, 250, 1)), color-stop(1, rgba(224, 224, 224, 1)));
+    background: -o-linear-gradient(-90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    background: -ms-linear-gradient(-90deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    // -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E0E0E0' ,GradientType=0)";
+    background: linear-gradient(180deg, rgba(250, 250, 250, 1) 0%, rgba(224, 224, 224, 1) 100%);
+    // filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E0E0E0', GradientType=0);
+    color: $navy;
+    margin-bottom: 1em;
+    padding: 16px 20px 10px;
+    h2 {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 1;
+    }
+    .heading-base__link {
+        position: absolute;
+        top: 1.5em;
+        right: 20px;
+        font-size: 12px;
+    }
+}
+
+.hd3 {
+    font-size: 1em;
+    color: $navy;
+    border-left: 6px solid $navy;
+    padding: 0 .5em;
+    font-weight: normal;
+    margin-bottom: 1em;
+}
+
+.hd4 {
+  color: $navy;
+  font-size: 1.25em;
+  font-weight: normal;
+  margin-bottom: .5em;
+}
+
+.hd5 {
+    color: $navy;
+    font-size: 1.125em;
+    font-weight: normal;
+    margin-bottom: .5em;
+    padding-left: .5em;
+    border-left: 6px solid $navy;
+}
+
+.items {
+    .item-name {
+        padding: .5em;
+        background: $second-color;
+    }
+    .heading-cat {
+        padding: 1em;
+        margin-bottom: 1em;
+        h3 {
+            font-size: 1.125em;
+            font-weight: normal;
+        }
+    }
+    .heading-cat--water {
+        border-left: 4px solid #2196F3;
+        color: #fff;
+        background: #1565C0;
+    }
+    .heading-cat--foods {
+        border-left: 4px solid #FF9800;
+        color: #fff;
+        background: #EF6C00;
+    }
+    .heading-cat--solar {
+        border-left: 4px solid #F44336;
+        color: #fff;
+        background: #C62828;
+    }
+    .heading-cat--megaphone {
+        border-left: 4px solid #009688;
+        color: #fff;
+        background: #00695C;
+    }
+    .heading-cat--car {
+        border-left: 4px solid #3F51B5;
+        color: #fff;
+        background: #283593;
+    }
+    .heading-cat--other {
+        border-left: 4px solid #E91E63;
+        color: #fff;
+        background: #AD1457;
+    }
+}

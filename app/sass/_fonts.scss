@@ -1,0 +1,31 @@
+//
+// CONDENSE-iconFont
+// http://icon.condense-c.com/
+//
+@font-face {
+    font-family: 'CONDENSEicon';
+    src: url('../fonts/CONDENSEicon.eot'),
+         url('../fonts/CONDENSEicon.eot?#iefix') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'CONDENSEicon';
+    src: url('../fonts/CONDENSEicon.woff2') fromat('woff2');
+    src: url('../fonts/CONDENSEicon.woff') fromat('woff');
+    src: url('../fonts/CONDENSEicon.ttf') format('truetype');
+    src: url('../fonts/CONDENSEicon.otf') format('opentype');
+}
+
+.icon-CONDENSEicon {
+    font-family: CONDENSEicon;
+    font-style: normal;
+    color: $navy;
+}
+
+.icon-tel:before {
+    content: ";"
+}
+
+.icon-sp:before {
+    content: "T"
+}
